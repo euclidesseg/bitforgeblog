@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root{
+    --background-body: #eee6ee;
+}
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+background-color: var(--background-body);
+}
+
+@media screen and (min-width:3000px){
+ 
+}
