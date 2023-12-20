@@ -1,4 +1,4 @@
-.sidebar{
+/* .sidebar{
     width: 70px;
     height: 100%;
     position: fixed;
@@ -16,10 +16,10 @@
     position: fixed;
     top: 0;
     background-color: white;
-}
+} */
 
 /* seccion principal */
-.section__major{
+/* .section__major{
     position: fixed;
     width: calc(100% - 70px);
     margin-top:70px;
@@ -74,4 +74,4 @@
         width: 230px;
 
     }
-}
+} */

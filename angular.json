@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "bitforgeblog:build:production"
+              "buildTarget": "bitforgeblog:build:production"
             },
             "development": {
-              "browserTarget": "bitforgeblog:build:development"
+              "buildTarget": "bitforgeblog:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bitforgeblog:build"
+            "buildTarget": "bitforgeblog:build"
           }
         },
         "test": {
