@@ -4,12 +4,12 @@ import { RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
     {
-        path:'blogs',
+        path:'bitforge',
         loadChildren:() => import('./app/bitforgeblog/bitforgeblog.module').then((module) => module.BitForgeModule)
     },
     {
         path:'',
-        redirectTo:'blogs',
+        redirectTo:'bitforge',
         pathMatch:'full'
     }
 
