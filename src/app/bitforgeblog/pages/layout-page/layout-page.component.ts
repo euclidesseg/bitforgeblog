@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout-page.component.css', './layout-page.component-movile.css']
 })
 export class LayoutPageComponent {
-
+  
 }

@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import {RouterModule, Routes} from '@angular/router';
 import { LayoutPageComponent } from "./pages/layout-page/layout-page.component";
-import { BlogsPageComponent } from "./pages/blogs-page/blogs-page.component";
+import { BlogPageComponent } from "./pages/blog-page/blog-page.component";
 import { MessagePageComponent } from "./pages/message-page/message-page.component";
 import { StatisticPageComponent } from "./pages/statistic-page/statistic-page.component";
 import { ProfilePageComponent } from "./pages/profile-page/profile-page.component";
@@ -15,7 +15,7 @@ const routes:Routes = [
         children:[
             {
                 path:'blogs',
-                component:BlogsPageComponent
+                component:BlogPageComponent
             },
             {
                 path:'messages',

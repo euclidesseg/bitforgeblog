@@ -1,19 +1,16 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
 :root{
-    --background-body: #eee6ee;
+    /* colors */
+    --background-body: rgb(202, 204, 217);
+
+    /* waves */
+    --wave-footer: url('./assets/waves/footer-wave.svg')
 }
 
 *{
-    margin: 0px;
+    margin: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 body{
-background-color: var(--background-body);
-}
-
-@media screen and (min-width:3000px){
- 
+    background-color: var(--background-body);
 }
