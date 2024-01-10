@@ -11,8 +11,8 @@ import { Component } from '@angular/core';
 export class LayoutPageComponent {
   public routesItems = [
     { label: '', class: 'bi bi-house', route: './blogs' },
-    { label: '', class: '', route: '' },
-    { label: '', class: '', route: '' },
-    { label: '', class: '', route: '' },
+    { label: '', class: 'bi bi-chat-left-dots', route: './messages' },
+    { label: '', class: 'bi bi-bar-chart', route: './statistics' },
+    { label: '', class: 'bi bi-gear', route: './settings' },
   ];
 }

@@ -14,16 +14,18 @@
 
 
 </section>
-<footer class="footer">
-  <ul>
+<footer class="footer flex items-center justify-center">
+  <ul class="flex items-center justify-between w-80 relative">
     @for (item of routesItems; track item.label) {
-      <li  [routerLink]="item.route">
-        <i [ngClass]="item.class" style="font-size: 1rem; color: black;"></i>
+      <li  [routerLink]="item.route" class="cursor-pointer text-blue-700">
+        <i [ngClass]="item.class" class="text-2xl"></i>
       </li>
     } @empty {
       Empty list of users
     }
-    
+    <li class="absolute cursor-pointer text-blue-700">
+      <i class="bi bi-plus-lg text-2xl"></i>
+    </li>
   </ul>
 </footer>
 
