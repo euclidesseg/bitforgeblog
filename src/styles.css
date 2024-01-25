@@ -1,6 +1,6 @@
 :root{
     /* colors */
-    --background-body: rgb(202, 204, 217);
+    --background-body: rgb(222, 223, 228);
 
     /* waves */
     --wave-footer: url('./assets/waves/footer-wave.svg')

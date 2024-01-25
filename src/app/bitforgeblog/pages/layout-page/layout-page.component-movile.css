@@ -10,7 +10,10 @@
 
 .navbar {
     height: 60px;
-    background-color: #ffff;
+    background-color: var(--background-body);
+}
+.navbar figure img{
+    box-shadow: 2px 2px 5px blue;
 }
 
 .section__home {
@@ -28,6 +31,24 @@
     width: 100%;
     border: none;
     background-color: #ffff;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
+    /* border-top-left-radius: 15%;
+    border-top-right-radius: 15%; */
+}
+
+.list__items .messages{
+    margin-right: 25px;
+}
+.list__items .graphic{
+    margin-left: 25px;
+}
+.list__items .new__post{
+    top: -45px;
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-body);
+    border-radius: 50%;
+}
+.new__post .buton-new__post{
+    box-shadow: 1px 1px 5px blue;
 }

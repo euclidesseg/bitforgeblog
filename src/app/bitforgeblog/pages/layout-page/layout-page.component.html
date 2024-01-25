@@ -1,5 +1,13 @@
 <!-- sidebar -->
-<nav class="navbar">
+<nav class="navbar bg-white flex justify-between items-center p-5">
+  <div class="logo ">
+    <span>Bitforge</span>
+  </div>
+  <div class="user">
+    <figure class="img-fluid w-12 h-12" [routerLink]="'./profile'">
+      <img src="assets/images/user.avif" alt="" class="w-full h-full rounded-full">
+    </figure>
+  </div>
 </nav>
 
 <nav class="sidebar ">
@@ -14,17 +22,20 @@
 
 
 </section>
-<footer class="footer flex items-center justify-center">
-  <ul class="flex items-center justify-between w-80 relative">
+<footer class="footer flex items-center justify-center p-5 rounded-tl-3xl rounded-tr-3xl">
+  <ul class="list__items flex items-center justify-between w-80 relative">
     @for (item of routesItems; track item.label) {
       <li  [routerLink]="item.route" class="cursor-pointer text-blue-700">
         <i [ngClass]="item.class" class="text-2xl"></i>
       </li>
     } @empty {
-      Empty list of users
+      Empty list of routesItems
     }
-    <li class="absolute cursor-pointer text-blue-700">
-      <i class="bi bi-plus-lg text-2xl"></i>
+    
+    <li class="new__post cursor-pointer text-blue-700 flex justify-center items-center pointer absolute left-* right-* top-0">
+      <button class="buton-new__post w-12 h-12 rounded-full bg-blue-700 text-white">
+        <i class="bi bi-plus-lg text-2xl"></i>
+      </button>
     </li>
   </ul>
 </footer>
