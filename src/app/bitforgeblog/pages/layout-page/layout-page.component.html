@@ -1,11 +1,14 @@
 <!-- sidebar -->
 <nav class="navbar bg-white flex justify-between items-center p-5">
-  <div class="logo ">
-    <span>Bitforge</span>
+  <div class="logo flex justify-center items-center gap-2">
+   <figure class=" w-10 h-10">
+    <img src="assets/images/logo.png" alt="" class="w-full h-full">
+   </figure>
+   <h1 class="text-xl text-blue-700 font-bold">Blog</h1>
   </div>
   <div class="user">
-    <figure class="img-fluid w-12 h-12" [routerLink]="'./profile'">
-      <img src="assets/images/user.avif" alt="" class="w-full h-full rounded-full">
+    <figure class="w-10 h-10 cursor-pointer" [routerLink]="'./profile'">
+      <img src="assets/images/user.avif" alt="" class="w-full h-full rounded-2xl">
     </figure>
   </div>
 </nav>
@@ -15,13 +18,12 @@
 </nav>
 
 
-<section class="section__home">
-  <section class="section__router">
+<section class="section__home p-1">
+  <section class="section__router w-100 h-100 ">
     <router-outlet></router-outlet>
   </section>
-
-
 </section>
+
 <footer class="footer flex items-center justify-center p-5 rounded-tl-3xl rounded-tr-3xl">
   <ul class="list__items flex items-center justify-between w-80 relative">
     @for (item of routesItems; track item.label) {
@@ -31,7 +33,7 @@
     } @empty {
       Empty list of routesItems
     }
-    
+
     <li class="new__post cursor-pointer text-blue-700 flex justify-center items-center pointer absolute left-* right-* top-0">
       <button class="buton-new__post w-12 h-12 rounded-full bg-blue-700 text-white">
         <i class="bi bi-plus-lg text-2xl"></i>
