@@ -28,7 +28,6 @@
 .section__router {
   min-height: 100%;
   width: 100%;
-  display: flex;
 }
 
 .footer {
