@@ -13,18 +13,34 @@
 </nav>
 
 <!-- sidebar -->
-<nav class="sidebar">
+<nav class="sidebar__content">
   <div class=""></div>
 </nav>
 
 
-<section class="section__home p-1">
-  <section class="section__router w-100 h-100 ">
+<section class="section__home p-1 md:flex items-center">
+  <section class="section__router section-leftw-100 h-100 ">
     <router-outlet></router-outlet>
   </section>
+
+  <section class="section-right hidden md:grid">
+      <div>
+        <img src="assets/images/user.avif" alt="">
+      </div>
+      <div>
+        <img src="assets/images/user.avif" alt="">
+      </div>
+      <div>
+        <img src="assets/images/user.avif" alt="">
+      </div>
+      <div>
+        <img src="assets/images/user.avif" alt="">
+      </div>
+  </section>
+ 
 </section>
 
-<footer class="footer flex items-center justify-center p-5 rounded-tl-3xl rounded-tr-3xl">
+<footer class="footer flex items-center justify-center p-5 rounded-tl-3xl rounded-tr-3xl sm:hidden">
   <ul class="list__items flex items-center justify-between w-80 relative">
     @for (item of routesItems; track item.label) {
       <li  [routerLink]="item.route" class="cursor-pointer text-blue-700">
