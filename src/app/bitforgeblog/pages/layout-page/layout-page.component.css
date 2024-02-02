@@ -1,0 +1,81 @@
+.sidebar {
+    display: block;
+}
+
+.navbar .section__home {
+    width: 100%;
+    max-width: 1700px;
+    padding: 0 60px 0 60px white;
+}
+
+.navbar {
+    height: 60px;
+    background-color: var(--background-body);
+    overflow: hidden;
+}
+
+.navbar figure img {
+    box-shadow: 2px 2px 5px blue;
+}
+
+.section__home {
+    height: auto;
+    height: calc(100vh - 120px);
+    width: 100vw;
+    border: none;
+    margin: 0;
+}
+
+.section__router {
+    min-height: 100%;
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    border: none;
+    background-color: #ffff;
+
+}
+
+.list__items .messages {
+    margin-right: 25px;
+}
+
+.list__items .graphic {
+    margin-left: 25px;
+}
+
+.list__items .new__post {
+    top: -45px;
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-body);
+    border-radius: 50%;
+}
+
+.new__post .buton-new__post {
+    box-shadow: 1px 1px 5px blue;
+}
+
+
+@media screen and (min-width: 640px) {}
+
+@media screen and (min-width: 1024px) {
+    .section-right {
+        width: 50%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .section-right div img {
+        width: 100%;
+        height: auto;
+       
+    }
+}
