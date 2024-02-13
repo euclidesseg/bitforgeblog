@@ -1,15 +1,25 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
     /* colors */
-    --background-body: rgb(222, 223, 228);
+    --background-body: #cbd5e1;
+    --footer-header-coloor: #295bac;
+    --sidebar-color:#fff;
+    --text-sidebar :#295bac;
 
     /* waves */
-    --wave-footer: url('./assets/waves/footer-wave.svg')
+    --wave-footer: url('./assets/waves/footer-wave.svg');
+
 }
 
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 body{
     background-color: var(--background-body);
